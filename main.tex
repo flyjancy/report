@@ -1,0 +1,28 @@
+% XeLaTeX
+\documentclass[UTF8]{ctexart}
+%\documentclass{article}
+
+%\usepackage[UTF8]{ctex}
+\usepackage{cite}
+\usepackage{xeCJK}
+\setCJKmainfont{STSong}
+
+\usepackage[colorlinks,
+linkcolor=blue, citecolor=black, urlcolor=blue]{hyperref}
+
+\title {My \LaTeX\space Template}
+\author{pastglory\thanks{\href{mailto:sunyata000@hotmail.com}{sunyata000@hotmail.com}}}
+
+\begin{document}
+\maketitle
+
+\bibliographystyle{IEEEtran}
+
+    Hello, \LaTeX.
+    This is a paper\cite{zhang2020sparch}.
+    你好，\LaTeX!
+
+
+\bibliography{reference}
+
+\end{document}
