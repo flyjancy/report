@@ -8,7 +8,10 @@
 \RequirePackage{ctex} % 中文
 \RequirePackage{cite} % 引用
 \RequirePackage[colorlinks, linkcolor=blue, citecolor=black, urlcolor=blue]{hyperref} % 超链接
-\RequirePackage{fontspec}
+\RequirePackage{fontspec} % 调整字体
+\RequirePackage{graphicx} % 插入图片
+\RequirePackage{float} % 设置图片浮动位置
+\RequirePackage{subfigure} % 插入多图时用子图显示
 
 % ref
 \bibliographystyle{IEEEtran} % 引用格式
@@ -36,10 +39,10 @@
 \newcommand*{\qihc}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %七号
 \newcommand*{\hwti}{\CJKfamily{hwti}}
 %------------------------------标题名称中文化-----------------------------%
-\renewcommand\abstractname{\hwti 摘\ 要}
-\renewcommand\refname{\hwti 参考文献}
-\renewcommand\figurename{\hwti 图}
-\renewcommand\tablename{\hwti 表}
+% \renewcommand\abstractname{\hwti 摘\ 要}
+% \renewcommand\refname{\hwti 参考文献}
+% \renewcommand\figurename{\hwti 图}
+% \renewcommand\tablename{\hwti 表}
 %------------------------------定理名称中文化-----------------------------%
 % \newtheorem{dingyi}{\hei 定义~}[section]
 % \newtheorem{dingli}{\hei 定理~}[section]
