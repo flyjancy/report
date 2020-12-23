@@ -9,6 +9,6 @@ $(JOBNAME).pdf: $(SRC) $(REF) $(STYLE)
 	$(TEX) $(SRC)
 	$(BIB) $(JOBNAME)
 	$(TEX) $(SRC)
-
+	$(TEX) $(SRC)
 clean:
 	rm $(JOBNAME).aux $(JOBNAME).log $(JOBNAME).out $(JOBNAME).bbl $(JOBNAME).blg

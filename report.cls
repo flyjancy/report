@@ -2,7 +2,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{report}[by pastglory]
 
-\LoadClass[12pt, openany]{article}
+\LoadClass[12pt]{article}
 
 % use packages
 \RequirePackage{ctex} % 中文
