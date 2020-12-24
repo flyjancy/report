@@ -1,18 +1,24 @@
 % XeLaTeX
-\documentclass[zh]{report}
+\documentclass[zh]{pgreport}
 
 \title {My \LaTeX\ Template}
 \author{pastglory\thanks{\href{mailto:sunyata000@hotmail.com}{sunyata000@hotmail.com}}}
+\date{}
 
 \begin{document}
 \maketitle
 
-Hello, \LaTeX.
-This is a paper\cite{zhang2020sparch}.
-% 你好，\LaTeX!这是另一篇论文\cite{sadi2017design}. 现在使用一句长句来调行间距，以达到
-% 自定义命令的需求
+\begin{abstract}
+This is abstract
+\end{abstract}
 
-% 下图为FPGA基本单元结构图。
+\section{简介}
+% Hello, \LaTeX.
+% This is a paper\cite{zhang2020sparch}.
+你好，\LaTeX!这是另一篇论文\cite{sadi2017design}. 现在使用一句长句来调行间距，以达到
+自定义命令的需求
+
+下图为FPGA基本单元结构图。
 \begin{figure}[H] % H为当前位置，!htb为忽略美学标准，htbp为浮动图形
     \centering
     \includegraphics{img/FPGA.jpg}

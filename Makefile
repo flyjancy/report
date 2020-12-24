@@ -1,11 +1,11 @@
 JOBNAME=main
 TEX=xelatex
 SRC=$(JOBNAME).tex
-STYLE=report.cls
+CLS=pgreport.cls
 REF=reference.bib
 BIB=bibtex
 
-$(JOBNAME).pdf: $(SRC) $(REF) $(STYLE)
+$(JOBNAME).pdf: $(SRC) $(REF) $(CLS)
 	$(TEX) $(SRC)
 	$(BIB) $(JOBNAME)
 	$(TEX) $(SRC)
