@@ -11,4 +11,5 @@ $(JOBNAME).pdf: $(SRC) $(REF) $(CLS)
 	$(TEX) $(SRC)
 	$(TEX) $(SRC)
 clean:
-	rm $(JOBNAME).aux $(JOBNAME).log $(JOBNAME).out $(JOBNAME).bbl $(JOBNAME).blg
+	rm *.aux $(JOBNAME).log $(JOBNAME).out $(JOBNAME).bbl $(JOBNAME).blg $(JOBNAME).toc
+	rm src/*.aux

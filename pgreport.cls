@@ -22,29 +22,28 @@
 \ifChinese
     \RequirePackage{ctex} % 中文
     \setCJKmainfont[AutoFakeBold=true]{STSong} % 主要字体宋体
-    \setCJKfamilyfont{hwti}{STHeitiSC-Light} % 给系统中的字体取个别名
-    \newcommand*{\hwti}{\CJKfamily{hwti}} 
-    \renewcommand\abstractname{\hwti \sjhc{摘\ 要}}
-    \renewcommand\refname{\hwti 参考文献}
-    \renewcommand\figurename{\hwti 图}
-    \renewcommand\tablename{\hwti 表}
-    \newtheorem{dingyi}{\hei 定义~}[section]
-    \newtheorem{dingli}{\hei 定理~}[section]
-    \newtheorem{yinli}[dingli]{\hei 引理~}
-    \newtheorem{tuilun}[dingli]{\hei 推论~}
-    \newtheorem{mingti}[dingli]{\hei 命题~}
+    \newCJKfontfamily{\hwti}{STHeitiSC-Light} 
+    \renewcommand\abstractname{ \sjhc{摘\ 要}}
+    \renewcommand\refname{ 参考文献}
+    \renewcommand\figurename{ 图}
+    \renewcommand\tablename{ 表}
+    \newtheorem{dingyi}{ 定义~}[section]
+    \newtheorem{dingli}{ 定理~}[section]
+    \newtheorem{yinli}[dingli]{ 引理~}
+    \newtheorem{tuilun}[dingli]{ 推论~}
+    \newtheorem{mingti}[dingli]{ 命题~}
     \newtheorem{lizi}{{例}}
 \else
 \fi
 
 % use packages
 \RequirePackage{cite} % 引用
-\RequirePackage[colorlinks, linkcolor=blue, citecolor=black, urlcolor=blue]{hyperref} % 超链接
+\RequirePackage{titlesec}
+\RequirePackage[colorlinks, linkcolor=black, citecolor=black, urlcolor=black]{hyperref} % 超链接
 \RequirePackage{fontspec} % 调整字体
 \RequirePackage{graphicx} % 插入图片
 \RequirePackage{float} % 设置图片浮动位置
 \RequirePackage{subfigure} % 插入多图时用子图显示
-\RequirePackage{titlesec}
 
 % ref
 \bibliographystyle{IEEEtran} % 引用格式
@@ -71,9 +70,10 @@
 
 \graphicspath{{./pic/}}
 
-% 
+% titlesec settings
 \titlespacing{\section}{0pt}{18pt}{6pt}
 \titlespacing{\subsection}{0pt}{12pt}{6pt}
 \titlespacing{\subsubsection}{0pt}{12pt}{6pt}
+\titleformat{\section}{\centering\sjhc\bfseries}{第\,\thesection\,章}{1em}{}
 
 \linespread{1.3} % 配置行间距
