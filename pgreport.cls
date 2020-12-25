@@ -50,7 +50,7 @@
     \setcounter{secnumdepth}{3}
     \usepackage{titletoc}
     \titlecontents{section}[0pt]{\addvspace{1.5pt}\filright\bf}%
-               {\contentspush{第\thecontentslabel 章\quad}}%
+               {\contentspush{第\zhnumber{\thecontentslabel} 章\quad}}%
                {}{\titlerule*[8pt]{.}\contentspage}
 \else
 \fi
