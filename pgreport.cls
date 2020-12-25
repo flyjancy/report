@@ -49,6 +49,7 @@
     \setcounter{tocdepth}{2}
     \setcounter{secnumdepth}{3}
     \usepackage{titletoc}
+    % 调整目录里的编号
     \titlecontents{section}[0pt]{\addvspace{1.5pt}\filright\bf}%
                {\contentspush{第\zhnumber{\thecontentslabel} 章\quad}}%
                {}{\titlerule*[8pt]{.}\contentspage}
@@ -80,9 +81,8 @@
 
 \graphicspath{{./pic/}}
 
-% titlesec settings
+% 页边距、段前/后距、行间距等距离设置
 \titlespacing{\section}{0pt}{18pt}{6pt}
 \titlespacing{\subsection}{0pt}{12pt}{6pt}
 \titlespacing{\subsubsection}{0pt}{12pt}{6pt}
-
 \linespread{1.3} % 配置行间距
