@@ -54,18 +54,18 @@
                {\contentspush{第\zhnumber{\thecontentslabel} 章\quad}}%
                {}{\titlerule*[8pt]{.}\contentspage}
 \else
+% 如果需要对英文单独设置，可以添加到这里
 \fi
 
-% ref
+% ref style
 \bibliographystyle{IEEEtran} % 引用格式
 
-%TODO : Change for my preference
 %----------------------------Font & Size--------------------------%
 \setmainfont{TimesNewRomanPSMT}
+% TODO
 % \setsansfont{} % 西文无称线字体
 % \setmonofont{} % 西文等宽字体
 % \setmathfont{} % 数学公式字体
-
 \newcommand*{\iuhc}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号
 \newcommand*{\xniu}{\fontsize{36pt}{\baselineskip}\selectfont} %小初号
 \newcommand*{\yihc}{\fontsize{28pt}{\baselineskip}\selectfont}      %一号
