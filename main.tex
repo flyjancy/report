@@ -7,12 +7,11 @@
 
 \begin{document}
 \maketitle
-
 \tableofcontents
-
 \begin{abstract}
 \input{src/abs}
 \end{abstract}
+\addcontentsline{toc}{section}{摘要}
 
 \section{简介}
 \input{src/intro}
@@ -20,8 +19,7 @@
 \subsection{结构}
 \input{src/arch}
 
-\appendix
-
 \bibliography{reference}
+\addcontentsline{toc}{section}{参考文献}
 
 \end{document}

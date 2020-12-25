@@ -21,6 +21,7 @@
 % package, package config, newcommand
 \ifChinese
     \RequirePackage{ctex} % 中文
+    \RequirePackage{zhnumber} % 中文编号
     \setCJKmainfont[AutoFakeBold=true]{STSong} % 主要字体宋体
     \newCJKfontfamily{\hwti}{STHeitiSC-Light} 
     \renewcommand\abstractname{ \sjhc{摘\ 要}}
@@ -33,12 +34,14 @@
     \newtheorem{tuilun}[dingli]{ 推论~}
     \newtheorem{mingti}[dingli]{ 命题~}
     \newtheorem{lizi}{{例}}
+    \newcommand{\thechinesesection}{\zhnum{section}}
 \else
 \fi
 
 % use packages
 \RequirePackage{cite} % 引用
-\RequirePackage{titlesec}
+\RequirePackage{titlesec} % 调整section
+\RequirePackage{titletoc} % 调整section
 \RequirePackage[colorlinks, linkcolor=black, citecolor=black, urlcolor=black]{hyperref} % 超链接
 \RequirePackage{fontspec} % 调整字体
 \RequirePackage{graphicx} % 插入图片
@@ -74,6 +77,9 @@
 \titlespacing{\section}{0pt}{18pt}{6pt}
 \titlespacing{\subsection}{0pt}{12pt}{6pt}
 \titlespacing{\subsubsection}{0pt}{12pt}{6pt}
-\titleformat{\section}{\centering\sjhc\bfseries}{第\,\thesection\,章}{1em}{}
+\titleformat{\section}{\centering\sjhc\bfseries}{第\thechinesesection 章}{0.5em}{}
+\titlecontents{section}[0pt]{\addvspace{1.5pt}\filright\bf}%
+               {\contentspush{第\thesection 章\ }}%
+               {}{\titlerule*[8pt]{.}\contentspage}
 
 \linespread{1.3} % 配置行间距
