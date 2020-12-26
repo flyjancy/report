@@ -32,6 +32,7 @@
 \RequirePackage{longtable} % 长表格
 \RequirePackage{multirow} % 支持在表格中跨行
 \RequirePackage{fancyhdr} % 页眉页脚
+\RequirePackage{color} % 改变颜色
 % 数学相关
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
@@ -75,7 +76,8 @@
 \setmainfont{TimesNewRomanPSMT}
 % TODO
 % \setsansfont{} % 西文无称线字体
-% \setmonofont{} % 西文等宽字体
+% \setmonofont{SourceCodeProForPowerline-Regular} % 西文等宽字体
+\setmonofont{Helvetica} % 西文等宽字体
 % \setmathfont{} % 数学公式字体
 \newcommand*{\iuhc}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号
 \newcommand*{\xniu}{\fontsize{36pt}{\baselineskip}\selectfont} %小初号
@@ -106,12 +108,12 @@
 
 % 源代码环境
 \lstset{
-    basicstyle          =   \sffamily,           % 基本代码风格
-    keywordstyle        =   \bfseries,           % 关键字风格
+    breaklines,                                  % 自动换行
+    basicstyle          =   \ttfamily,           % 基本代码风格
+    keywordstyle        =   \color{blue},           % 关键字风格
     commentstyle        =   \rmfamily\itshape,   % 注释的风格，斜体
     stringstyle         =   \ttfamily,           % 字符串风格
     flexiblecolumns,                             % 别问为什么，加上这个
-    numbers             =   left,                % 行号的位置在左边
     showspaces          =   false,               % 是否显示空格，显示了有点乱，所以不现实了
     numberstyle         =   \zihao{-5}\ttfamily, % 行号的样式，小五号，tt等宽字体
     showstringspaces    =   false,
