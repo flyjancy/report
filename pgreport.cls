@@ -34,7 +34,7 @@
 \RequirePackage{fancyhdr} % 页眉页脚
 \RequirePackage{color} % 改变颜色
 % 数学相关
-\RequirePackage{amsmath}
+\RequirePackage{mathtools}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
 \RequirePackage{bm}
@@ -105,6 +105,9 @@
 
 % cite
 \newcommand{\citeup}[1]{\textsuperscript{\cite{#1}}}
+
+% 数学公式
+\renewcommand\theequation{\arabic{section}-\arabic{equation}}
 
 % 源代码环境
 \lstset{
