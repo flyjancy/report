@@ -58,8 +58,7 @@
     \newtheorem{lizi}{{例}}
     \newcommand{\thechinesesection}{\zhnum{section}}
     \titleformat{\section}{\centering\sjhc\bfseries}{第\thechinesesection 章}{0.5em}{}
-    \setcounter{tocdepth}{2}
-    \setcounter{secnumdepth}{3}
+    \titleformat*{\subsection}{\sihc\bfseries}
     \usepackage{titletoc}
     % 调整目录里的编号
     \titlecontents{section}[0pt]{\addvspace{1.5pt}\filright\bf}%
@@ -97,8 +96,8 @@
 % 页边距、段前/后距、行间距等距离设置
 \geometry{a4paper, inner=3cm, outer=3cm, top=3cm, bottom=3cm, bindingoffset=0cm}
 \titlespacing{\section}{0pt}{6pt}{12pt}      % 三个参数分别是左补白，段前距，段后距
-\titlespacing{\subsection}{0pt}{6pt}{6pt}    % 三个参数分别是左补白，段前距，段后距
-\titlespacing{\subsubsection}{0pt}{6pt}{6pt} % 三个参数分别是左补白，段前距，段后距
+\titlespacing{\subsection}{0pt}{3pt}{2pt}    % 三个参数分别是左补白，段前距，段后距
+\titlespacing{\subsubsection}{0pt}{1pt}{1pt} % 三个参数分别是左补白，段前距，段后距
 \linespread{1.391} % 配置行间距
 \setlength\parindent{24pt}
 \setlength{\parskip}{0pt}
