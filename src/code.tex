@@ -1,3 +1,5 @@
+
+推荐的verilog代码风格如下所示。推荐的verilog代码风格如下所示。推荐的verilog代码风格如下所示。
 \lstset{language=verilog}
 \begin{lstlisting}
 module keyboard(
@@ -29,7 +31,7 @@ always @ (posedge clk or negedge rst_n) begin
     end
     else begin
         if (col[0]) begin 
-            if (treg0 != 12'hfff) // if treg0 == 12'hfff, it will keep until keyboard not pushed
+            if (treg0 != 12'hfff) 
                 treg0 <= treg0_nxt;
         end
         else begin
@@ -37,7 +39,7 @@ always @ (posedge clk or negedge rst_n) begin
         end
 
         if (col[1]) begin
-            if (treg1 != 12'hfff) // if treg1 == 12'hfff, it will keep until keyboard not pushed
+            if (treg1 != 12'hfff) 
                 treg1 <= treg1_nxt;
         end
         else begin   
@@ -45,7 +47,7 @@ always @ (posedge clk or negedge rst_n) begin
         end
 
         if (col[2]) begin
-            if (treg2 != 12'hfff) // if treg2 == 12'hfff, it will keep until keyboard not pushed
+            if (treg2 != 12'hfff)
                 treg2 <= treg2_nxt;
         end
         else begin
@@ -53,7 +55,7 @@ always @ (posedge clk or negedge rst_n) begin
         end
 
         if (col[3]) begin
-            if (treg3 != 12'hfff) // if treg3 == 12'hfff, it will keep until keyboard not pushed
+            if (treg3 != 12'hfff) 
                 treg3 <= treg3_nxt;
         end
         else begin        

@@ -110,7 +110,7 @@
 \lstset{
     breaklines,                                  % 自动换行
     basicstyle          =   \ttfamily,           % 基本代码风格
-    keywordstyle        =   \color{blue},           % 关键字风格
+    keywordstyle        =   \color{blue},        % 关键字风格
     commentstyle        =   \rmfamily\itshape,   % 注释的风格，斜体
     stringstyle         =   \ttfamily,           % 字符串风格
     flexiblecolumns,                             % 别问为什么，加上这个
@@ -119,4 +119,7 @@
     showstringspaces    =   false,
     captionpos          =   t,                   % 这段代码的名字所呈现的位置，t指的是top上面
     frame               =   lrtb,                % 显示边框
+    xleftmargin         =   2em,
+    xrightmargin        =   2em,
+    aboveskip           =   1em
 }
