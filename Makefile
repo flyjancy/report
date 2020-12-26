@@ -5,7 +5,7 @@ CLS=pgreport.cls
 REF=reference.bib
 BIB=bibtex
 
-$(JOBNAME).pdf: $(SRC) $(REF) $(CLS)
+$(JOBNAME).pdf: $(SRC) $(REF) $(CLS) src/*.tex
 	$(TEX) $(SRC)
 	$(BIB) $(JOBNAME)
 	$(TEX) $(SRC)

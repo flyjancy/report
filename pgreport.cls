@@ -26,6 +26,16 @@
 \RequirePackage{graphicx} % 插入图片
 \RequirePackage{float} % 设置图片浮动位置
 \RequirePackage{subfigure} % 插入多图时用子图显示
+\RequirePackage{geometry} % 调整边距
+\RequirePackage{listings} % 代码环境
+\RequirePackage{array} % 表格
+\RequirePackage{longtable} % 长表格
+\RequirePackage{multirow} % 支持在表格中跨行
+% 数学相关
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{bm}
 
 % 中文相关的种种
 % package, package config, newcommand
@@ -34,15 +44,15 @@
     \RequirePackage{zhnumber} % 中文编号
     \setCJKmainfont[AutoFakeBold=true]{STSong} % 主要字体宋体
     \newCJKfontfamily{\hwti}{STHeitiSC-Light} 
-    \renewcommand\abstractname{ \sjhc{摘\ 要}}
-    \renewcommand\refname{ 参考文献}
-    \renewcommand\figurename{ 图}
-    \renewcommand\tablename{ 表}
-    \newtheorem{dingyi}{ 定义~}[section]
-    \newtheorem{dingli}{ 定理~}[section]
-    \newtheorem{yinli}[dingli]{ 引理~}
-    \newtheorem{tuilun}[dingli]{ 推论~}
-    \newtheorem{mingti}[dingli]{ 命题~}
+    \renewcommand\abstractname{\sjhc{摘\ 要}}
+    \renewcommand\refname{参考文献}
+    \renewcommand\figurename{图}
+    \renewcommand\tablename{表}
+    \newtheorem{dingyi}{定义~}[section]
+    \newtheorem{dingli}{定理~}[section]
+    \newtheorem{yinli}[dingli]{引理~}
+    \newtheorem{tuilun}[dingli]{推论~}
+    \newtheorem{mingti}[dingli]{命题~}
     \newtheorem{lizi}{{例}}
     \newcommand{\thechinesesection}{\zhnum{section}}
     \titleformat{\section}{\centering\sjhc\bfseries}{第\thechinesesection 章}{0.5em}{}
@@ -85,4 +95,10 @@
 \titlespacing{\section}{0pt}{18pt}{6pt}
 \titlespacing{\subsection}{0pt}{12pt}{6pt}
 \titlespacing{\subsubsection}{0pt}{12pt}{6pt}
-\linespread{1.3} % 配置行间距
+\geometry{a4paper, inner=3cm, outer=3cm, top=3cm, bottom=3cm}
+\linespread{1.391} % 配置行间距
+\setlength\parindent{24pt}
+\setlength{\parskip}{0pt}
+
+% cite
+\newcommand{\citeup}[1]{\textsuperscript{\cite{#1}}}
