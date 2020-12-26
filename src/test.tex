@@ -1,5 +1,27 @@
+本章主要用于测试该模版。
 
-推荐的verilog代码风格如下所示。推荐的verilog代码风格如下所示。推荐的verilog代码风格如下所示。
+\subsection{结构}
+图\ref{FPGA结构}为FPGA基本单元结构图。
+\begin{figure}[H] % H为当前位置，!htb为忽略美学标准，htbp为浮动图形
+    \centering
+    \includegraphics{img/FPGA.jpg}
+    \caption{Slice of FPGA} %最终文档中希望显示的图片标题
+    \label{FPGA结构} %用于文内引用的标签
+\end{figure}
+
+FPGA的基本单元是Slice，主要包括LUT、MUX及触发器，其中每个Slice的大小和FPGA型号有关。
+
+\subsection{数学}
+这里有一个数学公式
+\begin{equation}
+    \int_1^2 x dx = \frac{3}{2} 
+\end{equation}
+
+\subsubsection{数学公式说明}
+这是一个简单的积分.
+
+\subsection{代码}
+推荐的verilog代码风格如下所示，但目前空格对齐的方式还没完全理解清楚。
 \lstset{language=verilog}
 \begin{lstlisting}
 module keyboard(
