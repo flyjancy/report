@@ -5,8 +5,8 @@
 module keyboard(
     input           clk,
     input           rst_n,
-    input  [3 : 0]  col, // column input, 1 enable
-    output [3 : 0]  key_pulse // if key pushed, output 1
+    input  [3 : 0]  col,
+    output [3 : 0]  key_pulse
 );
 
 reg  [11 : 0] treg0; // tmp reg
