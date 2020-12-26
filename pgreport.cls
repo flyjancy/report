@@ -15,10 +15,11 @@
 }
 \ProcessOptions\relax % 声明选项之后，处理选项
 
-\LoadClass[12pt]{article}
+\LoadClass{article}
 
 % use packages
 \RequirePackage{cite} % 引用
+\RequirePackage{geometry} % 调整边距
 \RequirePackage{titlesec} % 调整section
 \RequirePackage{titletoc} % 调整section
 \RequirePackage[colorlinks, linkcolor=black, citecolor=black, urlcolor=black]{hyperref} % 超链接
@@ -26,7 +27,6 @@
 \RequirePackage{graphicx} % 插入图片
 \RequirePackage{float} % 设置图片浮动位置
 \RequirePackage{subfigure} % 插入多图时用子图显示
-\RequirePackage{geometry} % 调整边距
 \RequirePackage{listings} % 代码环境
 \RequirePackage{array} % 表格
 \RequirePackage{longtable} % 长表格
@@ -92,10 +92,10 @@
 \graphicspath{{./pic/}}
 
 % 页边距、段前/后距、行间距等距离设置
-\titlespacing{\section}{0pt}{18pt}{6pt}
+\geometry{a4paper, inner=3cm, outer=3cm, top=3cm, bottom=3cm, bindingoffset=0cm}
+\titlespacing{\section}{0pt}{0pt}{18pt}
 \titlespacing{\subsection}{0pt}{12pt}{6pt}
 \titlespacing{\subsubsection}{0pt}{12pt}{6pt}
-\geometry{a4paper, inner=3cm, outer=3cm, top=3cm, bottom=3cm}
 \linespread{1.391} % 配置行间距
 \setlength\parindent{24pt}
 \setlength{\parskip}{0pt}
