@@ -2,12 +2,14 @@
 \documentclass[zh, a4paper, 12pt]{pgreport}
 
 \title {My \LaTeX\ Template}
-\author{pastglory\thanks{\href{mailto:sunyata000@hotmail.com}{sunyata000@hotmail.com}}}
-\date{}
+\author{pastglory}%\thanks{\href{mailto:sunyata000@hotmail.com}{sunyata000@hotmail.com}}}
+\date{\today\\v1.0}
 
 \begin{document}
 \maketitle
 \tableofcontents
+\setcounter{page}{0}
+\thispagestyle{empty}
 
 \newpage
 
@@ -16,8 +18,6 @@
     \input{src/abs}
 \end{abstract}
 \addcontentsline{toc}{section}{摘要}
-
-\newpage
 
 \section{简介}
 \input{src/intro}

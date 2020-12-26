@@ -108,6 +108,8 @@
 % cite
 \newcommand{\citeup}[1]{\textsuperscript{\cite{#1}}}
 
+% CTEX 设置
+\CTEXoptions[today=old]
 
 % 数学公式
 \renewcommand\theequation{\arabic{section}-\arabic{equation}}
