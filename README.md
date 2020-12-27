@@ -13,4 +13,5 @@ Bugs may exist.
 ## Version
 
 1.0: Initial version.
+
 1.1: Add tikz example, fix figure index.
