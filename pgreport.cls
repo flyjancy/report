@@ -22,7 +22,7 @@
 \RequirePackage{geometry} % 调整边距
 \RequirePackage{titlesec} % 调整section
 \RequirePackage{titletoc} % 调整section
-\RequirePackage[colorlinks, linkcolor=black, citecolor=black, urlcolor=black]{hyperref} % 超链接
+\RequirePackage{hyperref} % 超链接
 \RequirePackage{fontspec} % 调整字体
 \RequirePackage{graphicx} % 插入图片
 \RequirePackage{float} % 设置图片浮动位置
@@ -31,9 +31,12 @@
 \RequirePackage{array} % 表格
 \RequirePackage{longtable} % 长表格
 \RequirePackage{multirow} % 支持在表格中跨行
+\RequirePackage{diagbox}
 \RequirePackage{fancyhdr} % 页眉页脚
 \RequirePackage{xcolor} % 改变颜色
 \RequirePackage{abstract} % 配置摘要
+\RequirePackage{tikz}
+\RequirePackage{verbatim}
 % 数学相关
 \RequirePackage{mathtools}
 \RequirePackage{amsfonts}
@@ -108,11 +111,15 @@
 % cite
 \newcommand{\citeup}[1]{\textsuperscript{\cite{#1}}}
 
+\hypersetup{hidelinks}
+
 % CTEX 设置
 \CTEXoptions[today=old]
 
-% 数学公式
+% 数学公式、图片、表哥编号与章节挂钩
 \renewcommand\theequation{\arabic{section}-\arabic{equation}}
+\renewcommand\thefigure{\arabic{section}-\arabic{figure}}
+\renewcommand\thetable{\arabic{section}-\arabic{table}}
 
 % 源代码环境
 \lstset{
