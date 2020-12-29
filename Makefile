@@ -12,4 +12,4 @@ $(JOBNAME).pdf: $(SRC) $(REF) $(CLS) src/*.tex
 	$(TEX) $(SRC)
 clean:
 	rm *.aux $(JOBNAME).log $(JOBNAME).out $(JOBNAME).bbl $(JOBNAME).blg $(JOBNAME).toc
-	rm src/*.aux
+	#rm src/*.aux
