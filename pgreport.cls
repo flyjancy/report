@@ -106,7 +106,10 @@
 \linespread{1.391} % 配置行间距
 \setlength\parindent{24pt} % 缩进2个12pt
 \setlength{\parskip}{0pt} % 段间距和行间距一致
-\setlength{\abstitleskip}{-6pt} %
+\setlength{\abstitleskip}{-6pt} % 调整摘要下方距离
+% if need to adjust the space between figure and figure introduction
+% \setlength{\abovecaptionskip}{-12pt}
+% \setlength{\belowcaptionskip}{-6pt}
 
 % cite
 \newcommand{\citeup}[1]{\textsuperscript{\cite{#1}}}
