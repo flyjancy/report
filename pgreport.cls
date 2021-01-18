@@ -38,7 +38,7 @@
 \RequirePackage{tikz}
 \RequirePackage{verbatim}
 % 数学相关
-\RequirePackage{mathtools}
+\RequirePackage{amsmath}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
 \RequirePackage{bm}
