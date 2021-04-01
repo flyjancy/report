@@ -69,7 +69,7 @@
                {\contentspush{第\zhnumber{\thecontentslabel} 章\quad}}%
                {}{\titlerule*[8pt]{.}\contentspage}
 \else
-% 如果需要对英文单独设置，可以添加到这里
+% 如果需要对英文环境单独设置，可以添加到这里
 \fi
 
 % ref style
