@@ -1,6 +1,6 @@
 %-----------------------------Main Setting-----------------------%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{pgreport}[by pastglory]
+\ProvidesClass{report}[by flyjancy]
 
 % 中文和英文相关配置
 % 主要方便使用一个配置项决定中英文

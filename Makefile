@@ -1,7 +1,7 @@
 JOBNAME=main
 TEX=xelatex
 SRC=$(JOBNAME).tex
-CLS=pgreport.cls
+CLS=report.cls
 REF=reference.bib
 BIB=bibtex
 
